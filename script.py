@@ -34,3 +34,13 @@ my_transaction = {
 mempool.append(my_transaction)
 
 block_transactions = [transaction1, transaction3, my_transaction]
+
+# Hashing and SHA-256
+from hashlib import sha256
+
+# text to hash
+text = "Learning abbout blockchain"
+hash_result = sha256(text.encode())
+
+# print result
+print(hash_result.hexdigest())
